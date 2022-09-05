@@ -1295,7 +1295,7 @@ body {
 }
 @media (max-width: 480px) {
   .footer {
-    display: none;
+    padding: 20px 15px;
   }
 }
 .footer__content {
@@ -1311,6 +1311,8 @@ body {
 @media (max-width: 480px) {
   .footer__content {
     justify-content: center;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
   }
 }
 .footer__copyright {
@@ -1318,6 +1320,11 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 480px) {
+  .footer__copyright {
+    font-size: 8px;
+  }
 }
 
 .footer__list {
