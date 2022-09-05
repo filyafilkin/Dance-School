@@ -17,12 +17,31 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Nunito+Sans:wght@300;400&family=Turret+Road&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/animate.css" />
-    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="./styles/animate.css" />
+    <script src="./scripts/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
     <script defer src="./scripts/main.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon//favicon-16x16.png">
+    <link rel="manifest" href="./favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="keywords" content="dance, heels, Alexandra Kond, courses, dancing, girl">
+    <meta name="description" content="">
   </head>
   <body>
     <header class="header__container container">
@@ -48,11 +67,11 @@
 
       <button class="burger__btn burger__open active">
         <img src="./assets/burger.svg" alt="Open" class="burger__icon">
-     </button>
+      </button>
 
-     <button class="burger__btn burger__close">
-      <img src="./assets/close.svg" alt="Close" class="burger__icon">
-   </button>
+      <button class="burger__btn burger__close">
+        <img src="./assets/close.svg" alt="Close" class="burger__icon">
+      </button>
 
       <ul class="burger">
         <li>
@@ -106,12 +125,12 @@
               <!-- <source src="./assets/video.mp4" type="video/mp4" /> -->
               <!-- <source src="./assets/video.webm" type="video/webm" /> -->
             </video>
-            <button class="vibe__play" .click="playVideo" v-show="!isPlaying">
+            <button class="vibe__play" .click="playVideo">
               <svg class="vibe__icon">
                 <use xlink:href="./assets/sprite.svg#play"></use>
               </svg>
             </button>
-            <button class="vibe__pause" .click="pauseVideo" v-show="isPlaying">
+            <button class="vibe__pause" .click="pauseVideo">
               <svg class="vibe__icon">
                 <use xlink:href="./assets/sprite.svg#pause"></use>
               </svg>
@@ -230,11 +249,7 @@
             <span class="title--yellow">Тарифи</span>
           </h2>
           <div class="rate__list">
-            <div
-              class="rate__item"
-              .mouseover="featuresOpenBasic = true"
-              .mouseleave="featuresOpenBasic = false"
-            >
+            <div class="rate__item">
               <div class="rate__img">
                 <img src="./assets/rate1.png" alt="Basic" />
               </div>
@@ -247,7 +262,7 @@
                 <span class="rate__desription">
                   -вивчення базових елементів, технік та трюків
                 </span>
-                <ul v-show-slide="featuresOpenBasic" class="features">
+                <ul class="rate__accordion">
                   <li class="rate__desription">
                     -базова хореграфія з використання техніки
                   </li>
@@ -276,11 +291,7 @@
               </div>
             </div>
 
-            <div
-              class="rate__item"
-              .mouseover="featuresOpenStandart = true"
-              .mouseleave="featuresOpenStandart = false"
-            >
+            <div class="rate__item">
               <div class="rate__img">
                 <img src="./assets/rate2.png" alt="Standart" />
               </div>
@@ -293,7 +304,7 @@
                 <span class="rate__desription"
                   >-вивчення базових елементів, технік та трюків
                 </span>
-                <ul v-show-slide="featuresOpenStandart" class="features">
+                <ul class="rate__accordion">
                   <li class="rate__desription">
                     -базова хореграфія з використання техніки
                   </li>
@@ -329,11 +340,7 @@
               </div>
             </div>
 
-            <div
-              class="rate__item"
-              .mouseover="featuresOpenVip = true"
-              .mouseleave="featuresOpenVip = false"
-            >
+            <div class="rate__item">
               <div class="rate__img">
                 <img src="./assets/rate3.png" alt="VIP" />
               </div>
@@ -346,7 +353,7 @@
                 <span class="rate__desription"
                   >-вивчення базових елементів, технік та трюків
                 </span>
-                <ul v-show-slide="featuresOpenVip" class="features">
+                <ul class="rate__accordion">
                   <li class="rate__desription">
                     -базова хореграфія з використання техніки
                   </li>
@@ -395,12 +402,8 @@
             <span class="title--pink">FAQ</span>
           </h2>
           <div class="faq__content">
-            <div
-              class="faq__item"
-              .mouseover="featuresOpenFirst = true"
-              .mouseleave="featuresOpenFirst = false"
-            >
-              <div class="faq__accordeon">
+            <div class="faq__item">
+              <div class="faq__accordion">
                 <span class="faq__question">
                   Чи підходить курс для початківців?
                 </span>
@@ -408,20 +411,14 @@
                   <use xlink:href="./assets/sprite.svg#next"></use>
                 </svg>
               </div>
-              <ul v-show-slide="featuresOpenFirst" class="features">
-                <li class="faq__desription">
+                <p class="faq__desription">
                   Звичайно! Інформація курсу буде поступовою, від початкових
                   рухів до хореографій
-                </li>
-              </ul>
+                </p>
             </div>
 
-            <div
-              class="faq__item"
-              .mouseover="featuresOpenSecond = true"
-              .mouseleave="featuresOpenSecond = false"
-            >
-              <div class="faq__accordeon">
+            <div class="faq__item" >
+              <div class="faq__accordion">
                 <span class="faq__question">
                   Де буде проходити онлайн курс?
                 </span>
@@ -429,63 +426,45 @@
                   <use xlink:href="./assets/sprite.svg#next"></use>
                 </svg>
               </div>
-              <ul v-show-slide="featuresOpenSecond" class="features">
-                <li class="faq__desription">
+                <p class="faq__desription">
                   Доступ до відео уроків буде надсилатись у телеграм чат, де ви
                   будете отримувати закриті посилання на ютуб канал. Усі уроки у
                   записі, тому у будь-який час ви можете передивитись і пройти
                   тренування ще раз
-                </li>
-              </ul>
+                </p>
             </div>
 
-            <div
-              class="faq__item"
-              .mouseover="featuresOpenThird = true"
-              .mouseleave="featuresOpenThird = false"
-            >
-              <div class="faq__accordeon">
+            <div class="faq__item">
+              <div class="faq__accordion">
                 <span class="faq__question"> Скільки буде тривати курс? </span>
                 <svg class="faq__next">
                   <use xlink:href="./assets/sprite.svg#next"></use>
                 </svg>
               </div>
-              <ul v-show-slide="featuresOpenThird" class="features">
-                <li class="faq__desription">
+                <p class="faq__desription">
                   Курс буде тривати 1 місяць. На тиждень ви будете отримувати
                   2-3 заняття
-                </li>
-              </ul>
+                </p>
             </div>
 
-            <div
-              class="faq__item"
-              .mouseover="featuresOpenFourth = true"
-              .mouseleave="featuresOpenFourth = false"
-            >
-              <div class="faq__accordeon">
+            <div class="faq__item">
+              <div class="faq__accordion">
                 <span class="faq__question"> Що потрібно для занять? </span>
                 <svg class="faq__next">
                   <use xlink:href="./assets/sprite.svg#next"></use>
                 </svg>
               </div>
-              <ul v-show-slide="featuresOpenFourth" class="features">
-                <li class="faq__desription">
+                <p class="faq__desription">
                   В першу чергу вам потрібні зручні хілси, я рекомендую брати
                   каблуки 7-9 см для початківців і 9-11 см для вищого рівня.
                   Стосовно одягу, краще обрати такий одяг, в якому ви вибудете
                   відчувати себе привабливою, але не забувайте про його
                   зручність. Також варто не забувати про наколінники
-                </li>
-              </ul>
+                </p>
             </div>
 
-            <div
-              class="faq__item"
-              .mouseover="featuresOpenFifth = true"
-              .mouseleave="featuresOpenFifth = false"
-            >
-              <div class="faq__accordeon">
+            <div class="faq__item">
+              <div class="faq__accordion">
                 <span class="faq__question">
                   Якщо я не розумію виконання техніки або елементу, куди я можу
                   звернутись?
@@ -494,15 +473,13 @@
                   <use xlink:href="./assets/sprite.svg#next"></use>
                 </svg>
               </div>
-              <ul v-show-slide="featuresOpenFifth" class="features">
-                <li class="faq__desription">
+                <p class="faq__desription">
                   Сподіваюсь, що під час тренувань вам буде усе зрозуміло. Але
                   для цього ми зробили 2 тарифи зі зворотнім зв’язком. Де ви
                   можете звертатись до мене у будь-який час і я вам буду
                   відповідати або пояснювати так, щоб ви зрозуміли. Зверніть
                   увагу, що на тарифі BASIC зворотнього зв’язку немає
-                </li>
-              </ul>
+                </p>
             </div>
           </div>
 
@@ -526,7 +503,7 @@
 
               <li class="social__item">
                 <a
-                  href="https://www.tiktok.com/.kond_aleksandra"
+                  href="www.tiktok.com/@kond_aleksandra"
                   class="social__link"
                   target="_blank"
                 >
@@ -560,14 +537,13 @@
             <span class="title--yellow">Курс - це гарний подарунок</span>
           </h2>
 
-          <form action="" class="shop__list" .submit.prevent="onSubmit">
+          <form class="shop__list" id="radios">
             <input
               type="radio"
               id="basic"
-              value="basic"
+              value="https://secure.wayforpay.com/button/b3104dfe40330"
               name="shop"
               class="shop__radio"
-              v-model="selectCourse"
             />
             <label for="basic" class="shop__item">
               <div class="shop__wrapper">
@@ -587,10 +563,9 @@
             <input
               type="radio"
               id="standart"
-              value="standart"
+              value="https://secure.wayforpay.com/button/be38618ec3833"
               name="shop"
               class="shop__radio"
-              v-model="selectCourse"
               checked
             />
             <label for="standart" class="shop__item">
@@ -611,8 +586,7 @@
             <input
               type="radio"
               id="vip"
-              value="vip"
-              v-model="selectCourse"
+              value="https://secure.wayforpay.com/button/bc0592ac7fa5e"
               name="shop"
               class="shop__radio"
             />
@@ -631,7 +605,7 @@
               </div>
             </label>
 
-            <button .click="toPay" class="shop__btn">Дарую</button>
+            <input type="button" class="shop__btn" onclick="go()" value="Дарую">
           </form>
         </div>
       </section>

@@ -63,6 +63,7 @@ body {
     padding: 0 10px;
     align-items: center;
     z-index: 1;
+    height: 5vh;
   }
 }
 
@@ -72,25 +73,15 @@ body {
   justify-content: center;
   align-items: flex-end;
   width: 40vw;
+  height: 100vh;
   position: absolute;
-  z-index: 100;
   top: -0%;
   right: 0;
   background-color: transparent;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.5s;
+  transition: all 0.5s;
   padding: 100px 10px 0 0;
-  @media (max-width: 480px) {
-    height: 900px;
-  }
-
-  &__btn {
-    cursor: pointer;
-    z-index: 11;
-    background-color: transparent;
-    border: none;
-  }
 
   &__open {
     display: none;
@@ -98,7 +89,13 @@ body {
 
   &__close {
     display: none;
-    z-index: 12;
+  }
+
+  &__btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 10;
   }
 
   &__link {
@@ -107,9 +104,9 @@ body {
     line-height: 5px;
     margin-bottom: 75px;
     align-items: center;
-    &:before {
+    &::after {
       content: url(../assets/burger-dot.svg);
-      margin-right: 10px;
+      margin-left: 10px;
       box-shadow: 0 0 0.2rem #fff, 0 0 2rem #f921ff, 0 0 0.8rem #f921ff,
         inset 0 0 1.3rem #f921ff;
       border-radius: 50%;
@@ -169,7 +166,7 @@ body {
     }
 
     @media (max-width: 480px) {
-      height: 900px;
+      // height: 900px;
       text-align: left;
       justify-content: flex-end;
     }
@@ -204,8 +201,9 @@ body {
       margin: 0 auto;
     }
 
-    @media (max-width: 1200px) {
-      margin: 0;
+    @media (max-width: 400px) {
+      font-size: 50px;
+      line-height: 63px;
     }
   }
 
@@ -220,6 +218,11 @@ body {
     @media (max-width: 1200px) {
       font-size: 40px;
       margin: 0 0 20px 0;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 38px;
+      line-height: 63px;
     }
   }
 
@@ -244,8 +247,12 @@ body {
       width: 75%;
       height: 100%;
       background-position-x: 100%;
-      background-position-y: -10%;
+      background-position-y: 0%;
     }
+  }
+
+  &__active {
+    transform: translate3d(-150px, 0px, 0px);
   }
 }
 
@@ -544,8 +551,26 @@ body {
   &__item {
     width: 33%;
     max-width: 330px;
+    &:hover .rate__accordion {
+      height: auto;
+      transform: scaleY(1);
+    }
+
     @media (max-width: 700px) {
       width: 100%;
+    }
+  }
+
+  &__accordion {
+    height: 0;
+    overflow: hidden;
+    will-change: transform;
+    transition: transform 0.3s;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    @media (max-width: 1025px) {
+      height: 100%;
+      transform: scaleY(1);
     }
   }
 
@@ -640,13 +665,6 @@ body {
   }
 }
 
-@media (max-width: 1025px) {
-  .features {
-    height: auto !important;
-    visibility: visible !important;
-  }
-}
-
 // FAQ
 
 .faq {
@@ -655,8 +673,8 @@ body {
   background-size: cover;
   background-position-x: 50%;
   @media (max-width: 480px) {
-    background-image: url(../assets/hero-shadow.png);
-    background-repeat: no-repeat;
+    background-image: url(../assets/faq-back.jpg);
+    background-size: cover;
   }
 
   &__container {
@@ -713,9 +731,14 @@ body {
       transform: rotate(90deg);
       fill: #cbf620;
     }
+
+    &:hover .faq__desription {
+      height: auto;
+      transform: scaleY(1);
+    }
   }
 
-  &__accordeon {
+  &__accordion {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -741,6 +764,12 @@ body {
     font-size: 20px;
     line-height: 27px;
     font-family: "Nunito Sans";
+    height: 0;
+    overflow: hidden;
+    will-change: transform;
+    transition: transform 0.3s;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
     @media (max-width: 480px) {
       font-size: 16px;
     }
@@ -894,6 +923,10 @@ body {
     padding: 25px 30px;
     border: 1px solid white;
     transition: all 0.1s ease-out;
+    @media (max-width: 370px) {
+      width: 330px;
+      height: 200px;
+    }
   }
 
   &__radio {
@@ -907,6 +940,9 @@ body {
         rgba(245, 131, 249, 0.26) 35.12%,
         rgba(153, 0, 153, 0.1) 95.13%
       );
+      @media (max-width: 380px) {
+        width: 100%;
+      }
 
       &:checked,
       .shop__subtitle {
@@ -958,6 +994,10 @@ body {
       @media (max-width: 480px) {
         width: 360px;
         height: 215px;
+      }
+
+      @media (max-width: 380px) {
+        width: 100%;
       }
     }
   }
@@ -1026,6 +1066,7 @@ body {
     text-transform: uppercase;
     font-size: 24px;
     line-height: 29px;
+    font-family: "Montserrat";
     display: block;
     padding: 17px 30px;
     margin: 0 auto 70px auto;
@@ -1054,6 +1095,7 @@ body {
 
   &__title {
     margin-bottom: 80px;
+    max-width: 50%;
   }
 
   &__content {
@@ -1072,6 +1114,9 @@ body {
       11px -11px 55px rgba(255, 255, 255, 0.05),
       -1px 4px 1px rgba(0, 0, 0, 0.02), -11px 11px 55px rgba(0, 0, 0, 0.05);
     padding: 40px 70px 80px 70px;
+    @media (max-width: 700px) {
+      padding: 40px 20px 80px 50px;
+    }
   }
 
   &__titles {
@@ -1111,9 +1156,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 33%;
+    width: 30%;
     gap: 5px;
-    z-index: 2;
+    z-index: 3;
     @media (max-width: 800px) {
       width: auto;
     }
@@ -1193,7 +1238,7 @@ body {
     right: 25%;
     z-index: 3;
     @media (max-width: 1200px) {
-      width: 15%;
+      width: 25%;
       height: 100%;
       bottom: -15%;
       right: 5%;
@@ -1202,7 +1247,8 @@ body {
     }
 
     @media (max-width: 850px) {
-      width: 30%;
+      width: 40%;
+      bottom: -7%;
     }
   }
 }
@@ -1348,5 +1394,8 @@ body {
 }
 
 .active {
-  display: flex;
+  display: none;
+  @media (max-width: 1200px) {
+    display: flex;
+  }
 }
