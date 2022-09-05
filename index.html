@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heels Courses by KOND</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Nunito+Sans:wght@300;400&family=Turret+Road&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script defer src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="header__container container">
+      <a class="nav__logo" href="#">
+        <img src="./assets/logo.svg" alt="KOND" />
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Про Курс</a>
+          </li>
+          <li class="nav__item">
+            <a href="#rate" class="nav__link">Тарифи</a>
+          </li>
+          <li class="nav__item">
+            <a href="#faq" class="nav__link">Питання</a>
+          </li>
+          <li class="nav__item">
+            <a href="#reviews" class="nav__link">Відгуки</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="burger__btn burger__open active">
+        <img src="./assets/burger.svg" alt="Open" class="burger__icon">
+     </button>
+
+     <button class="burger__btn burger__close">
+      <img src="./assets/close.svg" alt="Close" class="burger__icon">
+   </button>
+
+      <ul class="burger">
+        <li>
+          <a href="#about" class="nav__link burger__link">Про Курс</a>
+        </li>
+        <li>
+          <a href="#rate" class="nav__link burger__link">Тарифи</a>
+        </li>
+        <li>
+          <a href="#faq" class="nav__link burger__link">Питання</a>
+        </li>
+        <li>
+          <a href="#reviews" class="nav__link burger__link">Відгуки</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="main">
+      <section class="hero" id="page-wrap">
+        <div class="hero__container container">
+          <div class="hero__img"></div>
+          <div class="hero__info">
+            <h1 class="hero__title">
+              <span class="hero__title--pink"> Online </span> Heels Course
+            </h1>
+            <div class="wow fadeInDown">
+            <h2 class="hero__subtitle holder">
+              <span class="hero__subtitle--pink">By</span> Kond Aleksandra
+            </h2>
+            <a class="btn" href="#rate">Приєднатись</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="vibe">
+        <div class="vibe__container container">
+          <h2 class="vibe__title title">
+            Fill This <span class="title--yellow"> Vibe </span>
+          </h2>
+          <div class="vibe__content">
+            <div class="vibe__mocap"></div>
+            <video
+              class="video"
+              poster="./assets/vibe-banner.png"
+              loop
+              preload="auto"
+              view-in
+              ref="myvideo"
+              autoplay
+            >
+              <!-- <source src="./assets/video.mp4" type="video/mp4" /> -->
+              <!-- <source src="./assets/video.webm" type="video/webm" /> -->
+            </video>
+            <button class="vibe__play" .click="playVideo" v-show="!isPlaying">
+              <svg class="vibe__icon">
+                <use xlink:href="./assets/sprite.svg#play"></use>
+              </svg>
+            </button>
+            <button class="vibe__pause" .click="pauseVideo" v-show="isPlaying">
+              <svg class="vibe__icon">
+                <use xlink:href="./assets/sprite.svg#pause"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__container container">
+          <h2 class="about__title title">
+            Під час курсу <span class="title--pink">ти</span>
+          </h2>
+          <div class="about__list">
+            <div class="about__item about__item1">
+              <span class="about__number">1</span>
+              <span class="about__text"
+                >вивчиш <span class="about__text--pink">чотири</span> різні
+                хореографії
+              </span>
+            </div>
+            <div class="about__item about__item--wrapper about__item2">
+              <span class="about__number about__number--wrapper">2</span>
+              <span class="about__text about__text--padding"
+                >відчуєш себе
+                <span class="about__text--pink">впевненою</span> та
+                <span class="about__text--pink">сексуальною</span>
+              </span>
+              <div class="about__img">
+                <img src="./assets/about1.png" alt="Sexy" />
+              </div>
+            </div>
+
+            <div class="about__item about__item3">
+              <span class="about__number">3</span>
+              <span class="about__text"
+                >ознайомишся з новим
+                <span class="about__text--pink">стилем</span> танців</span
+              >
+            </div>
+
+            <div class="about__item about__item4">
+              <span class="about__number">4</span>
+              <span class="about__text"
+                >навчишся
+                <span class="about__text--pink">імпровізувати</span></span
+              >
+            </div>
+
+            <div class="about__item about__item5">
+              <span class="about__number">5</span>
+              <span class="about__text"
+                >попрацюєш над
+                <span class="about__text--pink">музикальністю</span></span
+              >
+            </div>
+
+            <div class="about__item about__item6">
+              <span class="about__number">6</span>
+              <span class="about__text"
+                >відкриєш<span class="about__text--pink"> нові сторони</span>
+                своєї жіночності</span
+              >
+            </div>
+
+            <div class="about__item about__item--wrapper about__item7">
+              <span class="about__number about__number--wrapper">7</span>
+              <span class="about__text about__text--padding"
+                >будеш знаходитись у найкращому
+                <span class="about__text--pink">жіночому комьюніті</span></span
+              >
+              <div class="about__img">
+                <img src="./assets/about2.png" alt="Sexy" />
+              </div>
+            </div>
+
+            <div class="about__item about__item8">
+              <span class="about__number">8</span>
+              <span class="about__text"
+                >ознайомишся з
+                <span class="about__text--pink">базою</span> стилю</span
+              >
+            </div>
+
+            <div class="about__item about__item9">
+              <span class="about__number">9</span>
+              <span class="about__text"
+                ><span class="about__text--pink">здивуєш</span> своєю пластикою
+                будь-якого чоловіка</span
+              >
+            </div>
+
+            <div class="about__item about__item10">
+              <span class="about__number">10</span>
+              <span class="about__text"
+                >попрацюєш зі своїм
+                <span class="about__text--pink">емоційним станом</span> через
+                тіло</span
+              >
+            </div>
+
+            <div class="about__item about__item11">
+              <span class="about__number">11</span>
+              <span class="about__text"
+                >отримаєш <span class="about__text--pink">сертифікат</span> про
+                проходження курсу</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rate" id="rate">
+        <div class="rate__container container">
+          <h2 class="rate__title title">
+            <span class="title--yellow">Тарифи</span>
+          </h2>
+          <div class="rate__list">
+            <div
+              class="rate__item"
+              .mouseover="featuresOpenBasic = true"
+              .mouseleave="featuresOpenBasic = false"
+            >
+              <div class="rate__img">
+                <img src="./assets/rate1.png" alt="Basic" />
+              </div>
+              <div class="rate__content">
+                <div class="rate__line"></div>
+                <h3 class="rate__subtitle">Basic</h3>
+                <span class="rate__desription">
+                  -урок з розминкою для підготовки до занять
+                </span>
+                <span class="rate__desription">
+                  -вивчення базових елементів, технік та трюків
+                </span>
+                <ul v-show-slide="featuresOpenBasic" class="features">
+                  <li class="rate__desription">
+                    -базова хореграфія з використання техніки
+                  </li>
+                  <li class="rate__desription">
+                    -вивчення базових елементів, технік та трюків
+                  </li>
+                  <li class="rate__desription">
+                    -три хореографії різного настрою
+                  </li>
+                  <li class="rate__desription">
+                    -сертифікат з проходження курсу
+                  </li>
+                  <li class="rate__desription">
+                    -доступ до курсу протяго 1 місяця після закінчення
+                  </li>
+                </ul>
+                <span class="rate__price">2190 грн ціна</span>
+                <span class="rate__price--yellow">1190 грн сьогодні</span>
+                <a
+                  href="https://secure.wayforpay.com/button/b3104dfe40330"
+                  class="rate__btn"
+                  target="_blank"
+                  >Інвестую в себе</a
+                >
+                <div class="rate__line"></div>
+              </div>
+            </div>
+
+            <div
+              class="rate__item"
+              .mouseover="featuresOpenStandart = true"
+              .mouseleave="featuresOpenStandart = false"
+            >
+              <div class="rate__img">
+                <img src="./assets/rate2.png" alt="Standart" />
+              </div>
+              <div class="rate__content">
+                <div class="rate__line"></div>
+                <h3 class="rate__subtitle">Standart</h3>
+                <span class="rate__desription">
+                  -урок з розминкою для підготовки до занять
+                </span>
+                <span class="rate__desription"
+                  >-вивчення базових елементів, технік та трюків
+                </span>
+                <ul v-show-slide="featuresOpenStandart" class="features">
+                  <li class="rate__desription">
+                    -базова хореграфія з використання техніки
+                  </li>
+                  <li class="rate__desription">
+                    -вивчення базових елементів, технік та трюків
+                  </li>
+                  <li class="rate__desription">
+                    -три хореографії різного настрою
+                  </li>
+                  <li class="rate__desription">
+                    -сертифікат з проходження курсу
+                  </li>
+                  <li class="rate__desription rate__desription--yellow">
+                    -доступ до курсу протягом 2 місяців
+                  </li>
+                  <li class="rate__desription rate__desription--yellow">
+                    -зворотній зв’язок зі мною у телеграм
+                  </li>
+                  <li class="rate__desription rate__desription--yellow">
+                    -індивідуальний розбір ваших відео ДО проходження курсу/
+                    ПІСЛЯ проходження курсу
+                  </li>
+                </ul>
+                <span class="rate__price">2790 грн ціна</span>
+                <span class="rate__price--yellow">2590 грн сьогодні</span>
+                <a
+                  href="https://secure.wayforpay.com/button/be38618ec3833"
+                  class="rate__btn"
+                  target="_blank"
+                  >Інвестую в себе</a
+                >
+                <div class="rate__line"></div>
+              </div>
+            </div>
+
+            <div
+              class="rate__item"
+              .mouseover="featuresOpenVip = true"
+              .mouseleave="featuresOpenVip = false"
+            >
+              <div class="rate__img">
+                <img src="./assets/rate3.png" alt="VIP" />
+              </div>
+              <div class="rate__content">
+                <div class="rate__line"></div>
+                <h3 class="rate__subtitle">VIP</h3>
+                <span class="rate__desription">
+                  -урок з розминкою для підготовки до занять
+                </span>
+                <span class="rate__desription"
+                  >-вивчення базових елементів, технік та трюків
+                </span>
+                <ul v-show-slide="featuresOpenVip" class="features">
+                  <li class="rate__desription">
+                    -базова хореграфія з використання техніки
+                  </li>
+                  <li class="rate__desription">
+                    -вивчення базових елементів, технік та трюків
+                  </li>
+                  <li class="rate__desription">
+                    -три хореографії різного настрою
+                  </li>
+                  <li class="rate__desription">
+                    -сертифікат з проходження курсу
+                  </li>
+                  <li class="rate__desription rate__desription--yellow">
+                    -доступ до курсу протягом 2 місяців
+                  </li>
+                  <li class="rate__desription rate__desription--yellow">
+                    -зворотній зв’язок зі мною у телеграм
+                  </li>
+                  <li class="rate__desription rate__desription--yellow">
+                    -онлайн індивідуальне заняття з Kond Aleksandra (оффлайн,
+                    якщо ви у Києві) оффлайн зі мною у телеграм
+                  </li>
+                  <li class="rate__desription rate__desription--yellow">
+                    -індивідуальний розбір ваших відео ДО проходження курсу/
+                    ПІСЛЯ проходження курсу
+                  </li>
+                </ul>
+                <span class="rate__price">3390 грн ціна</span>
+                <span class="rate__price--yellow">3090 грн сьогодні</span>
+                <a
+                  href="https://secure.wayforpay.com/button/bc0592ac7fa5e"
+                  class="rate__btn"
+                  target="_blank"
+                  >Інвестую в себе</a
+                >
+                <div class="rate__line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="faq__container container">
+          <h2 class="faq__title title">
+            <span class="title--pink">FAQ</span>
+          </h2>
+          <div class="faq__content">
+            <div
+              class="faq__item"
+              .mouseover="featuresOpenFirst = true"
+              .mouseleave="featuresOpenFirst = false"
+            >
+              <div class="faq__accordeon">
+                <span class="faq__question">
+                  Чи підходить курс для початківців?
+                </span>
+                <svg class="faq__next">
+                  <use xlink:href="./assets/sprite.svg#next"></use>
+                </svg>
+              </div>
+              <ul v-show-slide="featuresOpenFirst" class="features">
+                <li class="faq__desription">
+                  Звичайно! Інформація курсу буде поступовою, від початкових
+                  рухів до хореографій
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="faq__item"
+              .mouseover="featuresOpenSecond = true"
+              .mouseleave="featuresOpenSecond = false"
+            >
+              <div class="faq__accordeon">
+                <span class="faq__question">
+                  Де буде проходити онлайн курс?
+                </span>
+                <svg class="faq__next">
+                  <use xlink:href="./assets/sprite.svg#next"></use>
+                </svg>
+              </div>
+              <ul v-show-slide="featuresOpenSecond" class="features">
+                <li class="faq__desription">
+                  Доступ до відео уроків буде надсилатись у телеграм чат, де ви
+                  будете отримувати закриті посилання на ютуб канал. Усі уроки у
+                  записі, тому у будь-який час ви можете передивитись і пройти
+                  тренування ще раз
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="faq__item"
+              .mouseover="featuresOpenThird = true"
+              .mouseleave="featuresOpenThird = false"
+            >
+              <div class="faq__accordeon">
+                <span class="faq__question"> Скільки буде тривати курс? </span>
+                <svg class="faq__next">
+                  <use xlink:href="./assets/sprite.svg#next"></use>
+                </svg>
+              </div>
+              <ul v-show-slide="featuresOpenThird" class="features">
+                <li class="faq__desription">
+                  Курс буде тривати 1 місяць. На тиждень ви будете отримувати
+                  2-3 заняття
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="faq__item"
+              .mouseover="featuresOpenFourth = true"
+              .mouseleave="featuresOpenFourth = false"
+            >
+              <div class="faq__accordeon">
+                <span class="faq__question"> Що потрібно для занять? </span>
+                <svg class="faq__next">
+                  <use xlink:href="./assets/sprite.svg#next"></use>
+                </svg>
+              </div>
+              <ul v-show-slide="featuresOpenFourth" class="features">
+                <li class="faq__desription">
+                  В першу чергу вам потрібні зручні хілси, я рекомендую брати
+                  каблуки 7-9 см для початківців і 9-11 см для вищого рівня.
+                  Стосовно одягу, краще обрати такий одяг, в якому ви вибудете
+                  відчувати себе привабливою, але не забувайте про його
+                  зручність. Також варто не забувати про наколінники
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="faq__item"
+              .mouseover="featuresOpenFifth = true"
+              .mouseleave="featuresOpenFifth = false"
+            >
+              <div class="faq__accordeon">
+                <span class="faq__question">
+                  Якщо я не розумію виконання техніки або елементу, куди я можу
+                  звернутись?
+                </span>
+                <svg class="faq__next">
+                  <use xlink:href="./assets/sprite.svg#next"></use>
+                </svg>
+              </div>
+              <ul v-show-slide="featuresOpenFifth" class="features">
+                <li class="faq__desription">
+                  Сподіваюсь, що під час тренувань вам буде усе зрозуміло. Але
+                  для цього ми зробили 2 тарифи зі зворотнім зв’язком. Де ви
+                  можете звертатись до мене у будь-який час і я вам буду
+                  відповідати або пояснювати так, щоб ви зрозуміли. Зверніть
+                  увагу, що на тарифі BASIC зворотнього зв’язку немає
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="social">
+            <h2 class="faq__subtitle">
+              <span class="title--yellow">Залишились питання?</span>
+            </h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a
+                  href="https://www.instagram.com/kond.aleksandra"
+                  class="social__link"
+                  target="_blank"
+                >
+                  <svg class="social__icon">
+                    <use xlink:href="./assets/sprite.svg#inst"></use>
+                  </svg>
+                  <span class="social__text">Like me</span>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a
+                  href="https://www.tiktok.com/.kond_aleksandra"
+                  class="social__link"
+                  target="_blank"
+                >
+                  <svg class="social__icon">
+                    <use xlink:href="./assets/sprite.svg#tt"></use>
+                  </svg>
+                  <span class="social__text">Duet with me</span>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a
+                  href="https://t.me/kond_aleksandra"
+                  class="social__link"
+                  target="_blank"
+                >
+                  <svg class="social__icon">
+                    <use xlink:href="./assets/sprite.svg#telegram"></use>
+                  </svg>
+                  <span class="social__text">Text me</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop">
+        <div class="shop__container container">
+          <h2 class="shop__title title">
+            <span class="title--yellow">Курс - це гарний подарунок</span>
+          </h2>
+
+          <form action="" class="shop__list" .submit.prevent="onSubmit">
+            <input
+              type="radio"
+              id="basic"
+              value="basic"
+              name="shop"
+              class="shop__radio"
+              v-model="selectCourse"
+            />
+            <label for="basic" class="shop__item">
+              <div class="shop__wrapper">
+                <h4 class="shop__subtitle">Sertificate</h4>
+                <span class="shop__choose"></span>
+              </div>
+              <div class="shop__img">
+                <img src="./assets/card.png" alt="Basic" />
+              </div>
+              <span class="shop__author">by Kond Alexandra</span>
+              <div class="shop__bar">
+                <span class="shop__course">Course Basic</span>
+                <span class="shop__price">1990 UAH</span>
+              </div>
+            </label>
+
+            <input
+              type="radio"
+              id="standart"
+              value="standart"
+              name="shop"
+              class="shop__radio"
+              v-model="selectCourse"
+              checked
+            />
+            <label for="standart" class="shop__item">
+              <div class="shop__wrapper">
+                <h4 class="shop__subtitle">Sertificate</h4>
+                <span class="shop__choose"></span>
+              </div>
+              <div class="shop__img">
+                <img src="./assets/card.png" alt="Basic" />
+              </div>
+              <span class="shop__author">by Kond Alexandra</span>
+              <div class="shop__bar">
+                <span class="shop__course">Course Standart</span>
+                <span class="shop__price">2590 UAH</span>
+              </div>
+            </label>
+
+            <input
+              type="radio"
+              id="vip"
+              value="vip"
+              v-model="selectCourse"
+              name="shop"
+              class="shop__radio"
+            />
+            <label for="vip" class="shop__item">
+              <div class="shop__wrapper">
+                <h4 class="shop__subtitle">Sertificate</h4>
+                <span class="shop__choose"></span>
+              </div>
+              <div class="shop__img">
+                <img src="./assets/card.png" alt="Basic" />
+              </div>
+              <span class="shop__author">by Kond Alexandra</span>
+              <div class="shop__bar">
+                <span class="shop__course">Course VIP</span>
+                <span class="shop__price">3090 UAH</span>
+              </div>
+            </label>
+
+            <button .click="toPay" class="shop__btn">Дарую</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="author">
+        <div class="author__container container">
+          <h2 class="author__title title">
+            <span class="title--pink">Авторка курсу</span>
+          </h2>
+          <div class="author__img"></div>
+          <div class="author__content">
+            <div class="author__titles">
+              <h3 class="author__name">Олександра Кондратьєва</h3>
+              <a
+                class="author__inst"
+                href="https://www.instagram.com/kond.aleksandra"
+                target="_blank"
+              >
+                <svg class="author__inst--icon">
+                  <use xlink:href="./assets/sprite.svg#inst"></use>
+                </svg>
+                <span class="author__inst--text">kond_aleksandra</span>
+              </a>
+            </div>
+            <div class="author__lists">
+              <ul class="author__list">
+                <li class="author__item">
+                  Топ-хореограф та педагог у напрямках HEELS та TWERK, викладає
+                  з 2015 року
+                </li>
+                <li class="author__item">
+                  Хореограф та суддя масштабних танцювальних кемпів по Україні
+                  та закордоном
+                </li>
+                <li class="author__item">
+                  Навчила більше 1000 дівчат відчувати своє тіло по новому
+                </li>
+                <li class="author__item">
+                  Учасниця INTERNATIONAL TWERK CHAMPIONS у Мадриді
+                </li>
+                <li class="author__item">
+                  Брала участь у багатьох концертах та проектах в Україні: «95
+                  Квартал», «Жіночий квартал», Atlas Weekend, «Ліга Зірок»,
+                  «Вечір прем'єр з Катериною Осадчою», «Музична платформа»,
+                  «Чорноморські ігри» «Мамахохотала», «Діти проти зірок»
+                </li>
+              </ul>
+
+              <ul class="author__list">
+                <li class="author__item">
+                  Співпрацювала з артистами: Тіна Кароль, Монатик, Анна Трінчер,
+                  Антитіла, Mozgi Production, MamaRika, Наталка Карпа, Марта
+                  Адамчук, Yariko, 044Rose, а також співпраця з балетом Freedom
+                </li>
+                <li class="author__item">
+                  Відвідала безліч майстер-класів та танцювальних кемпів від
+                  топових хореографів по Україні та закордоном
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="reviews__container container">
+          <h2 class="reviews__title title">
+            <span class="title--yellow">Відгуки</span>
+          </h2>
+          <div class="reviews__content">
+            <div class="reviews__item">
+              <div class="reviews__img">
+                <img
+                  src="./assets/photo1.png"
+                  alt="Review"
+                  class="reviews__photo"
+                />
+              </div>
+              <p class="reviews__quote">
+                Саша, ти найкраща! Я вибрала тебе і кожне тренування ти
+                випробовуєш мене на міцність. Твій професіоналізм мене захоплює.
+                Кожна твоя хореографія це виклик для мене і як я кайфую коли
+                бачу результат. Ти ставиш мені планку щоразу вище і вище і
+                допомагаєш її досягти. Я стала більш впевненою в собі і розкрила
+                в собі жіночність. Все завдяки нашим заняттям. Це найкраща
+                інвестиція в мою особу. Лав ю!
+              </p>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__img">
+                <img
+                  src="./assets/photo2.png"
+                  alt="Review"
+                  class="reviews__photo"
+                />
+              </div>
+              <p class="reviews__quote">
+                Сашенька, ми займаємося тільки третій місяць, але ти шалено
+                надихаєш мене! - найрозумніше вкладення яке я зробила останнім
+                часом! Ти мій нескінченний мотиватор, хілс мама! Дякую за твою
+                майстерність круто викладати та доносити інформацію чітко та
+                зрозуміло!!! І так, як виявилося, можна займатися і вдома, на
+                холодній плитці маючи тільки телефон замість дзеркала
+              </p>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__img">
+                <img
+                  src="./assets/photo3.png"
+                  alt="Review"
+                  class="reviews__photo"
+                />
+              </div>
+              <p class="reviews__quote">
+                Порахувала, що тренуюсь у Саші рівно два з половиною роки, а
+                мені здавалось набагато більше, здавалось, що мій результат на
+                сьогодні - це мінімум років п’ять активної роботи. У Саші завжди
+                особлива атмосфера на тренуваннях, неймовірна енергія, і
+                божественний настрій після нього я завжди про це говорила, і
+                продовжую - насолоджуюсь не тільки результатами, які чітко бачу,
+                а й кожне окреме заняття - емоційно. Сашині тренування - це як
+                наркотик, якого хочеться все більше і більше
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="thanks">
+        <div class="thanks__container container">
+          <div class="thanks__img"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__content">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Про Курс</a>
+            </li>
+            <li class="nav__item">
+              <a href="#rate" class="nav__link">Тарифи</a>
+            </li>
+            <li class="nav__item">
+              <a href="#faq" class="nav__link">Питання</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">Відгуки</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a
+              href="https://www.instagram.com/kond.aleksandra"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg class="footer__icon">
+                <use xlink:href="./assets/sprite.svg#footer-inst"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a
+              href="https://t.me/kond_aleksandra"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg class="footer__icon footer__icon--wrapper">
+                <use xlink:href="./assets/sprite.svg#footer-telegram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a
+              href="https://youtube.com/channel/UCKHKB21-pkXgxtDzMbSoCnw"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg class="footer__icon">
+                <use xlink:href="./assets/sprite.svg#footer-youtube"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a
+              href="https://www.tiktok.com/.kond_aleksandra"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg class="footer__icon">
+                <use xlink:href="./assets/sprite.svg#footer-tt"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <span class="footer__copyright">&#169; 2022 Усі права захищені</span>
+    </footer>
+  </body>
+</html>
