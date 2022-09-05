@@ -103,7 +103,7 @@ body {
   align-items: center;
 }
 .burger__link:before {
-  content: url(/assets/burger-dot.svg);
+  content: url(../assets/burger-dot.svg);
   margin-right: 10px;
   box-shadow: 0 0 0.2rem #fff, 0 0 2rem #f921ff, 0 0 0.8rem #f921ff, inset 0 0 1.3rem #f921ff;
   border-radius: 50%;
@@ -140,7 +140,7 @@ body {
 }
 
 .hero {
-  background-image: url(/assets/hero-shadow.png);
+  background-image: url(../assets/hero-shadow.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2;
@@ -219,7 +219,7 @@ body {
   }
 }
 .hero__img {
-  background-image: url(/assets/hero.png);
+  background-image: url(../assets/hero.png);
   background-repeat: no-repeat;
   background-position-y: 10%;
   background-position-x: 60%;
@@ -275,7 +275,7 @@ body {
 }
 
 .vibe {
-  background-image: url(/assets/vibe-blur.png);
+  background-image: url(../assets/vibe-blur.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -302,7 +302,7 @@ body {
   visibility: visible;
 }
 .vibe__mocap {
-  background-image: url(/assets/mocup.png);
+  background-image: url(../assets/mocup.png);
   background-repeat: no-repeat;
   width: 350px;
   height: 480px;
@@ -351,7 +351,7 @@ body {
 }
 
 .about {
-  background-image: url(/assets/about-shadow.png);
+  background-image: url(../assets/about-shadow.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -491,7 +491,7 @@ body {
 }
 
 .rate {
-  background-image: url(/assets/rate-shadow.png);
+  background-image: url(../assets/rate-shadow.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -621,14 +621,14 @@ body {
   }
 }
 .faq {
-  background-image: url(/assets/faq-back1.jpg);
+  background-image: url(../assets/faq-back1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
 }
 @media (max-width: 480px) {
   .faq {
-    background-image: url(/assets/hero-shadow.png);
+    background-image: url(../assets/hero-shadow.png);
     background-repeat: no-repeat;
   }
 }
@@ -837,7 +837,7 @@ body {
   letter-spacing: 0.11em;
 }
 .shop__choose:after {
-  content: url(/assets/cursor.svg);
+  content: url(../assets/cursor.svg);
 }
 .shop__item {
   display: flex;
@@ -877,7 +877,7 @@ body {
 }
 .shop__radio:checked + .shop__item:checked:after,
 .shop__radio:checked + .shop__item .shop__choose:after {
-  content: url(/assets/selected.svg);
+  content: url(../assets/selected.svg);
 }
 .shop__radio:checked + .shop__item:checked,
 .shop__radio:checked + .shop__item .shop__author {
@@ -1132,14 +1132,14 @@ body {
   }
 }
 .author__item::before {
-  content: url(/assets/dot.svg);
+  content: url(../assets/dot.svg);
   position: absolute;
   width: 7px;
   left: -13%;
   top: 0%;
 }
 .author__img {
-  background-image: url(/assets/author.png);
+  background-image: url(../assets/author.png);
   background-size: 55%;
   background-repeat: no-repeat;
   width: 40%;
@@ -1209,7 +1209,7 @@ body {
 }
 
 .thanks {
-  background-image: url(/assets/about-shadow.png);
+  background-image: url(../assets/about-shadow.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1233,7 +1233,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-image: url(/assets/thanks.png);
+  background-image: url(../assets/thanks.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 50%;

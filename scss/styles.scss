@@ -108,7 +108,7 @@ body {
     margin-bottom: 75px;
     align-items: center;
     &:before {
-      content: url(/assets/burger-dot.svg);
+      content: url(../assets/burger-dot.svg);
       margin-right: 10px;
       box-shadow: 0 0 0.2rem #fff, 0 0 2rem #f921ff, 0 0 0.8rem #f921ff,
         inset 0 0 1.3rem #f921ff;
@@ -151,7 +151,7 @@ body {
 // Hero
 
 .hero {
-  background-image: url(/assets/hero-shadow.png);
+  background-image: url(../assets/hero-shadow.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2;
@@ -224,7 +224,7 @@ body {
   }
 
   &__img {
-    background-image: url(/assets/hero.png);
+    background-image: url(../assets/hero.png);
     background-repeat: no-repeat;
     background-position-y: 10%;
     background-position-x: 60%;
@@ -277,7 +277,7 @@ body {
 // Vibe
 
 .vibe {
-  background-image: url(/assets/vibe-blur.png);
+  background-image: url(../assets/vibe-blur.png);
   background-repeat: no-repeat;
   background-size: cover;
   @media (max-width: 480px) {
@@ -305,7 +305,7 @@ body {
   }
 
   &__mocap {
-    background-image: url(/assets/mocup.png);
+    background-image: url(../assets/mocup.png);
     background-repeat: no-repeat;
     width: 350px;
     height: 480px;
@@ -359,7 +359,7 @@ body {
 // About
 
 .about {
-  background-image: url(/assets/about-shadow.png);
+  background-image: url(../assets/about-shadow.png);
   background-repeat: no-repeat;
   background-size: cover;
   &__container {
@@ -513,7 +513,7 @@ body {
 // Rate
 
 .rate {
-  background-image: url(/assets/rate-shadow.png);
+  background-image: url(../assets/rate-shadow.png);
   background-repeat: no-repeat;
   background-size: cover;
   &__container {
@@ -650,12 +650,12 @@ body {
 // FAQ
 
 .faq {
-  background-image: url(/assets/faq-back1.jpg);
+  background-image: url(../assets/faq-back1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
   @media (max-width: 480px) {
-    background-image: url(/assets/hero-shadow.png);
+    background-image: url(../assets/hero-shadow.png);
     background-repeat: no-repeat;
   }
 
@@ -873,7 +873,7 @@ body {
     }
 
     &:after {
-      content: url(/assets/cursor.svg);
+      content: url(../assets/cursor.svg);
     }
   }
 
@@ -924,7 +924,7 @@ body {
         }
 
         &:after {
-          content: url(/assets/selected.svg);
+          content: url(../assets/selected.svg);
         }
       }
 
@@ -1174,7 +1174,7 @@ body {
     }
 
     &::before {
-      content: url(/assets/dot.svg);
+      content: url(../assets/dot.svg);
       position: absolute;
       width: 7px;
       left: -13%;
@@ -1183,7 +1183,7 @@ body {
   }
 
   &__img {
-    background-image: url(/assets/author.png);
+    background-image: url(../assets/author.png);
     background-size: 55%;
     background-repeat: no-repeat;
     width: 40%;
@@ -1255,7 +1255,7 @@ body {
 // Thanks
 
 .thanks {
-  background-image: url(/assets/about-shadow.png);
+  background-image: url(../assets/about-shadow.png);
   background-size: cover;
   background-repeat: no-repeat;
   &__container {
@@ -1277,7 +1277,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-image: url(/assets/thanks.png);
+    background-image: url(../assets/thanks.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: 50%;
