@@ -58,7 +58,7 @@ body {
   top: 20px;
   padding: 0 10px;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
   height: 5vh;
 }
 
@@ -97,7 +97,7 @@ body {
   margin-bottom: 75px;
   align-items: center;
 }
-.burger__link::after {
+b .burger__link::after {
   content: url(../assets/burger-dot.svg);
   margin-left: 10px;
   box-shadow: 0 0 0.2rem #fff, 0 0 2rem #f921ff, 0 0 0.8rem #f921ff, inset 0 0 1.3rem #f921ff;
@@ -255,7 +255,7 @@ body {
 
 .btn {
   max-width: 340px;
-  padding: 15px 80px;
+  padding: 15px 0;
   border: 1px solid #f921ff;
   border-radius: 8px;
   background-color: transparent;
@@ -738,7 +738,7 @@ body {
   height: 0;
   overflow: hidden;
   will-change: transform;
-  transition: transform 0.3s;
+  transition: transform 0.6s;
   transform: scaleY(0);
   transform-origin: 50% 0;
 }
