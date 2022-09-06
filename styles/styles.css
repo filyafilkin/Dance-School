@@ -129,7 +129,7 @@ body {
   text-shadow: 0 0 7px #f921ff, 0 0 10px #f921ff, 0 0 42px #f921ff;
   border-bottom: 2px solid #f921ff;
 }
-.nav__logo {
+.nav__logo img {
   width: 245px;
   z-index: 5;
 }
@@ -357,6 +357,7 @@ body {
   background-image: url(../assets/about-shadow.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
 }
 .about__container {
   display: flex;
@@ -565,6 +566,7 @@ body {
   border: 1px solid #cbf620;
   margin-bottom: 10px;
   width: 100%;
+  max-width: 340px;
 }
 .rate__content {
   display: flex;
@@ -1262,7 +1264,7 @@ body {
     width: 100%;
   }
 }
-.reviews__photo {
+.reviews__photo img {
   max-width: 280px;
   width: 80%;
   margin-bottom: 40px;

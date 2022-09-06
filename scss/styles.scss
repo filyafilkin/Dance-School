@@ -137,7 +137,7 @@ body {
     }
   }
 
-  &__logo {
+  &__logo img {
     width: 245px;
     z-index: 5;
   }
@@ -365,6 +365,7 @@ body {
   background-image: url(../assets/about-shadow.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
   &__container {
     display: flex;
     flex-direction: column;
@@ -585,6 +586,7 @@ body {
     border: 1px solid #cbf620;
     margin-bottom: 10px;
     width: 100%;
+    max-width: 340px;
   }
 
   &__content {
@@ -1307,7 +1309,7 @@ body {
     }
   }
 
-  &__photo {
+  &__photo img {
     max-width: 280px;
     width: 80%;
     margin-bottom: 40px;
