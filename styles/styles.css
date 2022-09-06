@@ -1193,7 +1193,7 @@ b .burger__link::after {
   content: url(../assets/dot.svg);
   position: absolute;
   width: 7px;
-  left: -13%;
+  left: -8%;
   top: 0%;
 }
 .author__img {
