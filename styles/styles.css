@@ -129,6 +129,9 @@ body {
   text-shadow: 0 0 7px #f921ff, 0 0 10px #f921ff, 0 0 42px #f921ff;
   border-bottom: 2px solid #f921ff;
 }
+.nav__logo {
+  width: 50%;
+}
 .nav__logo img {
   width: 245px;
   z-index: 5;
