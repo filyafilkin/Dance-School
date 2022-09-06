@@ -31,3 +31,14 @@ function go() {
     }
   }
 }
+
+// let faqItem = document.querySelectorAll(".faq__item");
+// faqItem.addEventListener("mouseover", function (e) {
+//   let faqDescription = document.querySelectorAll(".faq__description");
+//   faqDescription.classList.toggle("faq__active");
+// });
+
+// faqItem.addEventListener("click", function (e) {
+//   let faqDescription = document.querySelectorAll(".faq__description");
+//   faqDescription.classList.toggle("faq__active");
+// });

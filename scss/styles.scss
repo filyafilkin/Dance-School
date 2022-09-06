@@ -614,7 +614,7 @@ body {
     text-transform: uppercase;
   }
 
-  &__desription {
+  &__description {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 7px;
@@ -721,6 +721,20 @@ body {
       border: 1px solid #c9c9c9;
       box-shadow: 0 0 7px #c9c9c9, 0 0 10px #c9c9c9, 0 0 12px #c9c9c9;
     }
+
+    &:focus {
+      background: linear-gradient(
+        108.87deg,
+        rgba(255, 255, 255, 0.8) 0.66%,
+        rgba(211, 211, 211, 0.1) 99.48%
+      );
+      box-shadow: 11px -11px 2px rgba(255, 255, 255, 0.02),
+        11px -11px 55px rgba(255, 255, 255, 0.05),
+        -1px 4px 1px rgba(0, 0, 0, 0.02), -11px 11px 55px rgba(0, 0, 0, 0.05);
+      border: 1px solid #c9c9c9;
+      box-shadow: 0 0 7px #c9c9c9, 0 0 10px #c9c9c9, 0 0 12px #c9c9c9;
+    }
+
     &:active {
       background: linear-gradient(
         108.87deg,
@@ -741,6 +755,13 @@ body {
       background-clip: text;
     }
 
+    &:focus .faq__question {
+      background: linear-gradient(0deg, #2a247c 100%, #ffffff 0%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
     &:active .faq__question {
       background: linear-gradient(0deg, #2a247c 100%, #ffffff 0%);
       -webkit-background-clip: text;
@@ -753,21 +774,36 @@ body {
       fill: #cbf620;
     }
 
+    &:focus .faq__next {
+      transform: rotate(90deg);
+      fill: #cbf620;
+    }
+
     &:active .faq__next {
       transform: rotate(90deg);
       fill: #cbf620;
     }
 
-    &:hover .faq__desription {
+    &:hover .faq__description {
       height: auto;
       transform: scaleY(1);
     }
 
-    &:active .faq__desription {
+    &:focus .faq__description {
+      height: auto;
+      transform: scaleY(1);
+    }
+
+    &:active .faq__description {
       height: auto;
       transform: scaleY(1);
     }
   }
+
+  // &__active {
+  //   height: auto;
+  //   transform: scaleY(1);
+  // }
 
   &__accordion {
     display: flex;
@@ -790,7 +826,7 @@ body {
     }
   }
 
-  &__desription {
+  &__description {
     padding-top: 10px;
     font-size: 20px;
     line-height: 27px;
