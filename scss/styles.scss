@@ -561,7 +561,7 @@ body {
     height: 0;
     overflow: hidden;
     will-change: transform;
-    transition: transform 0.3s;
+    transition: transform 0.9s;
     transform: scaleY(0);
     transform-origin: 50% 0;
     @media (max-width: 1025px) {
