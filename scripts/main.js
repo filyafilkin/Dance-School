@@ -32,7 +32,18 @@ function go() {
   }
 }
 
-// function showAccordeon() {
-//   let faqDesc = document.querySelectorAll("faq__description");
-//   faqDesc.classList.toggle("faq__active");
-// }
+const video = document.querySelector("video");
+let buttonPlay = document.querySelector(".vibe__play");
+let buttonPause = document.querySelector(".vibe__pause");
+
+function playVideo() {
+  if (video.paused) {
+    video.play();
+    buttonPause.classList.add("vibe__active");
+    buttonPlay.classList.remove("vibe__active");
+  } else {
+    video.pause();
+    buttonPause.classList.remove("vibe__active");
+    buttonPlay.classList.add("vibe__active");
+  }
+}

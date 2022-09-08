@@ -37,7 +37,7 @@
     <meta name="msapplication-TileImage" content="./favicon//ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="keywords" content="dance, heels, Alexandra Kond, courses, dancing, girl">
-    <meta name="description" content="">
+    <meta name="description" content="Онлайн курс з хілс від Kond Aleksandra">
   </head>
   <body>
     <header class="header__container container">
@@ -113,24 +113,21 @@
               class="video"
               poster="./assets/vibe-banner.png"
               loop
-              preload="auto"
-              view-in
-              ref="myvideo"
-              autoplay
             >
-              <!-- <source src="./assets/video.mp4" type="video/mp4" /> -->
-              <!-- <source src="./assets/video.webm" type="video/webm" /> -->
-            <!-- </video>
-            <button class="vibe__play" onclick="playVideo">
+              <source src="./assets/video.mpeg" type="video/mp4" />
+              <source src="./assets/video.webm" type="video/webm" />
+              <source src="./assets/video.ogg" type="video/ogg" />
+             </video>
+             <button class="vibe__play vibe__active" onclick="playVideo()">
               <svg class="vibe__icon">
                 <use xlink:href="./assets/sprite.svg#play"></use>
               </svg>
             </button>
-            <button class="vibe__pause" onclick="pauseVideo">
+            <button class="vibe__pause" onclick="playVideo()">
               <svg class="vibe__icon">
                 <use xlink:href="./assets/sprite.svg#pause"></use>
               </svg>
-            </button> -->
+            </button>
           </div>
         </div>
       </section>
@@ -810,7 +807,10 @@
           </li>
         </ul>
       </div>
-      <span class="footer__copyright">&#169; 2022 Усі права захищені</span>
+      <div class="footer__bar">
+        <span class="footer__copyright">&#169; 2022 Усі права захищені</span>
+        <a class="footer__policy" href="./assets/policy.pdf" target="_blank">Правила і умови порядок і терміни надання послуги, спосіб оплати</a>
+    </div>
     </footer>
   </body>
 </html>
