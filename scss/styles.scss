@@ -1419,7 +1419,7 @@ body {
     }
   }
 
-  &__bar {
+  &__policy {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1429,7 +1429,7 @@ body {
     }
   }
 
-  &__policy {
+  &__btn {
     font-size: 14px;
     line-height: 17px;
     color: rgba(255, 255, 255, 0.3);

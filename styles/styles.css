@@ -1386,24 +1386,24 @@ body {
 .footer__icon--wrapper {
   padding-right: 2px;
 }
-.footer__bar {
+.footer__policy {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 900px) {
-  .footer__bar {
+  .footer__policy {
     flex-direction: column;
     justify-content: left;
   }
 }
-.footer__policy {
+.footer__btn {
   font-size: 14px;
   line-height: 17px;
   color: rgba(255, 255, 255, 0.3);
 }
 @media (max-width: 480px) {
-  .footer__policy {
+  .footer__btn {
     font-size: 8px;
   }
 }
